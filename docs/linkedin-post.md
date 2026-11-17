@@ -17,7 +17,7 @@ Decisão de arquitetura que mais me ensinou: o token do MCP **não tem permissã
 Maior aprendizado: MCP não substitui tools, ele **padroniza** como a IA descobre e usa contexto e ações. Um servidor, vários clientes.
 
 🎥 Demo no primeiro comentário
-🔗 Código: github.com/SEU_USUARIO/crm-copilot-mcp
+🔗 Código: github.com/RickAmorim87/crm-copilot-mcp
 
 #MCP #ModelContextProtocol #IA #LLM #LangChainJS #NodeJS #EngenhariaDeIA
 
