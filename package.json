@@ -1,0 +1,44 @@
+{
+  "name": "crm-copilot-mcp",
+  "version": "1.0.0",
+  "description": "MCP server that lets AI agents safely operate a legacy customer API (JWT, RBAC, service tokens, rate limiting).",
+  "type": "module",
+  "license": "MIT",
+  "bin": {
+    "crm-copilot-mcp": "mcp-server/src/index.js"
+  },
+  "files": [
+    "mcp-server/src",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "api": "node api/src/index.js",
+    "mcp": "node mcp-server/src/index.js",
+    "inspect": "npx @modelcontextprotocol/inspector node mcp-server/src/index.js",
+    "agent": "node agent/index.js",
+    "test": "node --test tests/api.test.js tests/mcp.test.js"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "ai-agents",
+    "langchain",
+    "nodejs"
+  ],
+  "dependencies": {
+    "@langchain/anthropic": "^1.6.5",
+    "@langchain/core": "^1.4.1",
+    "@langchain/langgraph": "^1.7.4",
+    "@langchain/mcp-adapters": "^2.0.3",
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "dotenv": "^18.0.10",
+    "express": "^5.3.0",
+    "jsonwebtoken": "^9.0.3",
+    "mongodb": "^7.9.0",
+    "zod": "^3.25.76"
+  }
+}
